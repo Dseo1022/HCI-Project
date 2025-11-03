@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings – Smart Bytes</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --fg: #333;
+      --card: #fff;
+      --border: #ddd;
+      --accent: #007bff;
+      --muted: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      max-width: 430px;
+      margin: auto;
+      border: 1px solid #ccc;
+      border-radius: 16px;
+      overflow-y: auto;
+      height: 100vh;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--card);
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 16px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    header a {
+      font-size: 20px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    main {
+      background: var(--card);
+      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      background: var(--card);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      line-height: 1.2;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 13px;
+      background: #fff;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid #e5e7eb;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      white-space: nowrap;
+      background: #fff;
+    }
+
+    .footer {
+      position: sticky;
+      bottom: 0;
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 16px;
+    }
+
+    .btn {
+      flex: 1;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn.ghost {
+      background: #f3f4f6;
+      color: #111;
+    }
+
+    @media (max-width: 400px) {
+      .chip {
+        padding: 5px 8px;
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="sadler.html">&#8592;</a>
+    <h1>Settings</h1>
+    <span style="width:20px"></span>
+  </header>
+
+  <main>
+    <section class="card">
+      <h3>Personal Preferences</h3>
+      <div style="margin-bottom:8px;">
+        <div style="font-size:12px;margin-bottom:6px;color:#555;">Dietary Restrictions (multi-select)</div>
+        <div class="chips">
+          <label class="chip"><input type="checkbox" name="diet" value="vegetarian">Vegetarian</label>
+          <label class="chip"><input type="checkbox" name="diet" value="vegan">Vegan</label>
+          <label class="chip"><input type="checkbox" name="diet" value="gluten_free">Gluten-Free</label>
+          <label class="chip"><input type="checkbox" name="diet" value="nut_allergy">Nut Allergy</label>
+          <label class="chip"><input type="checkbox" name="diet" value="dairy_free">Dairy-Free</label>
+          <label class="chip"><input type="checkbox" name="diet" value="none">None</label>
+        </div>
+      </div>
+      <label style="font-size:12px;color:#555;">Primary Dining Hall</label>
+      <select>
+        <option>Sadler</option>
+        <option>Commons</option>
+      </select>
+    </section>
+
+    <section class="card">
+      <h3>Nutrition Goals</h3>
+      <div class="chips">
+        <label class="chip"><input type="checkbox" name="goals" value="protein">Track protein</label>
+        <label class="chip"><input type="checkbox" name="goals" value="calories">Track calories</label>
+        <label class="chip"><input type="checkbox" name="goals" value="healthy_first">Healthier first</label>
+        <label class="chip"><input type="checkbox" name="goals" value="personalized">Personalized suggestions</label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Notifications</h3>
+      <div class="chips">
+        <label class="chip"><input type="checkbox" name="notify" value="favorite">Favorite dish available</label>
+        <label class="chip"><input type="checkbox" name="notify" value="daily_summary">Daily dining summary</label>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">
+    <button class="btn ghost" onclick="history.back()">Cancel</button>
+    <button class="btn primary" id="saveBtn">Save Preferences</button>
+  </div>
+
+  <script>
+    // Keep "None" mutually exclusive
+    const none = document.querySelector('input[name="diet"][value="none"]');
+    const others = document.querySelectorAll('input[name="diet"]:not([value="none"])');
+    if (none) {
+      none.addEventListener('change', () => {
+        if (none.checked) others.forEach(cb => cb.checked = false);
+      });
+      others.forEach(cb => cb.addEventListener('change', () => {
+        if (cb.checked) none.checked = false;
+      }));
+    }
+
+    document.getElementById('saveBtn')?.addEventListener('click', () => {
+    window.location.href = 'sadler.html';
+    });
+  </script>
+</body>
+</html>

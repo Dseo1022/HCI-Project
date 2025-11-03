@@ -1,0 +1,1808 @@
+{
+  "hall": "Sadler",
+  "stations": [
+    {
+      "id": "fyb",
+      "name": "Fruit & Yogurt Bar",
+      "items": [
+        {
+          "name": "Non-Dairy Coconut Vanilla Yogurt",
+          "serving": "1/2 cup",
+          "calories": 260,
+          "desc": "Coconut-based yogurt made with coconut cream and sugar.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Hard Boiled Eggs",
+          "serving": "2 eggs",
+          "calories": 160,
+          "desc": "Two hard boiled eggs.",
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Cantaloupe",
+          "serving": "1/2 cup",
+          "calories": 25,
+          "desc": "Cubed fresh cantaloupe.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Diced Pineapple",
+          "serving": "1/2 cup",
+          "calories": 50,
+          "desc": "Fresh diced pineapple.",
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Honeydew Melon",
+          "serving": "1/2 cup",
+          "calories": 25,
+          "desc": "Cubed honeydew melon.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Mandarin Oranges",
+          "serving": "1/4 cup",
+          "calories": 35,
+          "desc": "Chilled Mandarin oranges in light syrup.",
+          "tags": [],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Red Grapes",
+          "serving": "1/2 cup",
+          "calories": 60,
+          "desc": "Fresh red seedless grapes.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Cottage Cheese",
+          "serving": "1/4 cup",
+          "calories": 45,
+          "desc": "Creamy cottage cheese.",
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Nonfat Greek Yogurt",
+          "serving": "1/2 cup",
+          "calories": 70,
+          "desc": "Nonfat Greek yogurt.",
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Nonfat Strawberry Yogurt",
+          "serving": "1/2 cup",
+          "calories": 90,
+          "desc": "Creamy nonfat strawberry yogurt.",
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "global",
+      "name": "Global Kitchen",
+      "items": [
+        {
+          "name": "Pita Bread",
+          "serving": "1 each",
+          "calories": 210,
+          "desc": "Round pocket bread.",
+          "tags": [],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Sumac Onions",
+          "serving": "1/4 cup",
+          "calories": 10,
+          "desc": "Sumac-seasoned sliced red onions.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Tzatziki Sauce",
+          "serving": "2 tbsp",
+          "calories": 60,
+          "desc": "Tzatziki sauce.",
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Iceberg Lettuce",
+          "serving": "2 tbsp",
+          "calories": 0,
+          "desc": "Shredded iceberg lettuce.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Chicken Souvlaki",
+          "serving": null,
+          "calories": 180,
+          "desc": "Grilled chicken skewer marinated with garlic, lemon, vinegar, oregano.",
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Beef Gyro Meat",
+          "serving": "1 slice",
+          "calories": 80,
+          "desc": "Sliced beef gyro meat.",
+          "tags": [],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Yellow Basmati Rice",
+          "serving": null,
+          "calories": 150,
+          "desc": "Rice with turmeric in vegetable broth.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Lemon Tahini Dressing",
+          "serving": null,
+          "calories": 60,
+          "desc": "Tahini, lemon, garlic, parsley, cumin.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 5.0,
+          "img": ""
+        },
+        {
+          "name": "Cumin‑Spiced Roasted Butternut Squash",
+          "serving": null,
+          "calories": 120,
+          "desc": "Roasted squash with EVOO, lemon, honey, parsley & cumin.",
+          "tags": [
+            "vegetarian",
+            "plant_forward",
+            "gluten_free",
+            "eat_well"
+          ],
+          "rating": 3.5,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "graze",
+      "name": "Graze",
+      "items": [
+        {
+          "name": "Chow Mein Noodles",
+          "serving": "1/4 cup",
+          "calories": 70,
+          "desc": "Crispy chow mein noodles.",
+          "tags": [
+            "vegan"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Croutons",
+          "serving": "2 tbsp",
+          "calories": 30,
+          "desc": "Homestyle seasoned croutons.",
+          "tags": [
+            "vegetarian"
+          ],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Granola",
+          "serving": "2 tbsp",
+          "calories": 45,
+          "desc": "Crunchy low fat granola.",
+          "tags": [
+            "whole_grains"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Penne Pasta Salad",
+          "serving": null,
+          "calories": 130,
+          "desc": "Penne, baby spinach, basil, balsamic vinaigrette.",
+          "tags": [],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Toasted Barley Salad",
+          "serving": null,
+          "calories": 60,
+          "desc": "Barley, cucumbers, tomatoes, green onion, lemon‑basil vinaigrette.",
+          "tags": [
+            "plant_forward",
+            "eat_well",
+            "whole_grains"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Balsamic Vinaigrette",
+          "serving": "2 tbsp",
+          "calories": 60,
+          "desc": null,
+          "tags": [],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Blue Cheese Dressing",
+          "serving": "2 tbsp",
+          "calories": 150,
+          "desc": null,
+          "tags": [],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Creamy Caesar Dressing",
+          "serving": "2 tbsp",
+          "calories": 140,
+          "desc": null,
+          "tags": [],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Fat‑Free French Dressing",
+          "serving": "2 tbsp",
+          "calories": 35,
+          "desc": null,
+          "tags": [],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "French Fried Onions",
+          "serving": "2 tbsp",
+          "calories": 70,
+          "desc": null,
+          "tags": [
+            "vegan"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Lite Italian Dressing",
+          "serving": "2 tbsp",
+          "calories": 40,
+          "desc": null,
+          "tags": [],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Oil & Vinegar",
+          "serving": "2 tbsp",
+          "calories": 190,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Ranch Dressing",
+          "serving": "2 tbsp",
+          "calories": 100,
+          "desc": null,
+          "tags": [],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Baby Spinach",
+          "serving": "1 cup",
+          "calories": 10,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 5.0,
+          "img": ""
+        },
+        {
+          "name": "Black Olives",
+          "serving": "1/4 cup",
+          "calories": 45,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Blanched Broccoli Florets",
+          "serving": "1/2 cup",
+          "calories": 20,
+          "desc": "Blanched fresh broccoli florets.",
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Cucumbers",
+          "serving": "1/2 cup",
+          "calories": 10,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Dried Cranberries",
+          "serving": "1 tbsp",
+          "calories": 30,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Grape Tomatoes",
+          "serving": "1/2 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Iceberg Lettuce",
+          "serving": "1 cup",
+          "calories": 10,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Shredded Carrots",
+          "serving": "1/4 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Sliced Mixed Bell Peppers",
+          "serving": "1/2 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Sliced Red Onions",
+          "serving": "1 slice",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Bacon Pieces",
+          "serving": "1/2 ozw",
+          "calories": 70,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Baked Cubed Tofu",
+          "serving": "2 tbsp",
+          "calories": 50,
+          "desc": null,
+          "tags": [],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Chopped Hard‑Cooked Egg",
+          "serving": "2 tbsp",
+          "calories": 35,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Diced Chicken",
+          "serving": "1/4 cup",
+          "calories": 45,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Diced Ham",
+          "serving": "1/4 cup",
+          "calories": 50,
+          "desc": null,
+          "tags": [],
+          "rating": 5.0,
+          "img": ""
+        },
+        {
+          "name": "Red Kidney Beans",
+          "serving": "1/2 cup",
+          "calories": 90,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Shredded Cheddar Cheese",
+          "serving": "2 tbsp",
+          "calories": 60,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Shredded Vegan Cheddar",
+          "serving": "1 tbsp",
+          "calories": 45,
+          "desc": null,
+          "tags": [],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Sunflower Seeds",
+          "serving": "1 tbsp",
+          "calories": 50,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Roasted Veggies",
+          "serving": null,
+          "calories": 60,
+          "desc": "Zucchini, tomatoes, red pepper, chickpeas, olives with red wine vinaigrette.",
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free",
+            "eat_well"
+          ],
+          "rating": 3.5,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "name": "Main Ingredient",
+      "items": [
+        {
+          "name": "Pimento Cheese‑Style Grits",
+          "serving": null,
+          "calories": 100,
+          "desc": "Cheddar, cream cheese & roasted peppers folded into warm grits.",
+          "tags": [],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Cajun Baked Chicken",
+          "serving": null,
+          "calories": 540,
+          "desc": "Cajun‑seasoned baked chicken leg quarter.",
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Spicy Kale & Bacon",
+          "serving": null,
+          "calories": 90,
+          "desc": "Sautéed kale, bacon, onion with cider vinegar & hot sauce.",
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Roasted Turnips",
+          "serving": null,
+          "calories": 60,
+          "desc": "Seasoned turnips with parsley.",
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free",
+            "eat_well"
+          ],
+          "rating": 3.0,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "items": [
+        {
+          "name": "Classic Cheese Pizza",
+          "serving": null,
+          "calories": 270,
+          "desc": "House‑made dough, tomato sauce, melted mozzarella.",
+          "tags": [
+            "vegetarian"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Jalapeño Popper Pizza",
+          "serving": null,
+          "calories": 350,
+          "desc": "Jalapeños, bacon & cheddar over cream‑cheese ranch spread.",
+          "tags": [],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Pepperoni Pizza",
+          "serving": null,
+          "calories": 300,
+          "desc": "Crispy pepperoni, tomato sauce & mozzarella.",
+          "tags": [],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Vegan Roasted Veggie Pizza",
+          "serving": null,
+          "calories": 280,
+          "desc": "Vegan mozzarella & roasted veggies.",
+          "tags": [],
+          "rating": 1.5,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "root",
+      "name": "Root",
+      "items": [
+        {
+          "name": "Seasoned Rice",
+          "serving": null,
+          "calories": 130,
+          "desc": "Long‑grain rice seasoned simply.",
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Spicy Vegetable Gumbo",
+          "serving": null,
+          "calories": 40,
+          "desc": "Roasted eggplant, okra, zucchini, mushrooms, peppers in spicy tomato stew.",
+          "tags": [
+            "vegan",
+            "coolfood_low_carbon",
+            "gluten_free",
+            "eat_well"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Southwest Green Beans",
+          "serving": null,
+          "calories": 40,
+          "desc": "Green beans sautéed with chili powder, cumin & cilantro.",
+          "tags": [
+            "plant_forward",
+            "eat_well"
+          ],
+          "rating": 3.5,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "smoothies",
+      "name": "Smoothies & Milkshakes",
+      "items": [
+        {
+          "name": "Baby Spinach",
+          "serving": "1 cup",
+          "calories": 10,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 5.0,
+          "img": ""
+        },
+        {
+          "name": "Banana",
+          "serving": "1/4 cup",
+          "calories": 60,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 5.0,
+          "img": ""
+        },
+        {
+          "name": "Blueberries",
+          "serving": "1/2 cup",
+          "calories": 70,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Mango",
+          "serving": "1 ozw",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Strawberries",
+          "serving": "1/4 cup",
+          "calories": 10,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "sweetn",
+      "name": "Sweet Nothings",
+      "items": [
+        {
+          "name": "White Bread",
+          "serving": "1 slice",
+          "calories": 70,
+          "desc": null,
+          "tags": [],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Whole Wheat Bread",
+          "serving": "1 slice",
+          "calories": 50,
+          "desc": null,
+          "tags": [
+            "vegan"
+          ],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Belgian Waffle Mix",
+          "serving": null,
+          "calories": 450,
+          "desc": null,
+          "tags": [
+            "vegetarian"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Chocolate Chip Cookie",
+          "serving": null,
+          "calories": 120,
+          "desc": "Gooey rich chocolate in every bite.",
+          "tags": [
+            "vegetarian"
+          ],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Sugary Sugar Cookie",
+          "serving": null,
+          "calories": 120,
+          "desc": "Buttery, rolled in sanding sugar.",
+          "tags": [
+            "vegetarian"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "English Muffin",
+          "serving": null,
+          "calories": 110,
+          "desc": null,
+          "tags": [
+            "vegan"
+          ],
+          "rating": 1.0,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "sweetp",
+      "name": "Sweet Pickles",
+      "items": [
+        {
+          "name": "Flour Tortilla",
+          "serving": "1 each",
+          "calories": 210,
+          "desc": null,
+          "tags": [
+            "vegan"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Hoagie Roll",
+          "serving": "1 each",
+          "calories": 180,
+          "desc": null,
+          "tags": [],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "White Bread",
+          "serving": "1 slice",
+          "calories": 70,
+          "desc": null,
+          "tags": [],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Whole Wheat Bread",
+          "serving": "1 slice",
+          "calories": 50,
+          "desc": null,
+          "tags": [
+            "vegan"
+          ],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Chipotle Mayonnaise",
+          "serving": "1 tbsp",
+          "calories": 110,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Dill Pickle Slices",
+          "serving": "2 slices",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Mayonnaise",
+          "serving": "2 tbsp",
+          "calories": 210,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Garden Vegetable Soup",
+          "serving": "6 fl oz",
+          "calories": 80,
+          "desc": "Veggies & beans in garlic herb broth.",
+          "tags": [
+            "coolfood_low_carbon"
+          ],
+          "rating": 5.0,
+          "img": ""
+        },
+        {
+          "name": "Twice Stuffed Baked Potato Soup",
+          "serving": "6 fl oz",
+          "calories": 250,
+          "desc": "Russet potatoes, chives, cheddar, Parmesan cheese sauce.",
+          "tags": [
+            "coolfood_low_carbon"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Banana Peppers",
+          "serving": "1/4 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Green Leaf Lettuce",
+          "serving": "1 piece",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Sliced Red Onions",
+          "serving": "1 slice",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Sliced Tomatoes",
+          "serving": "1 slice",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Grilled Pimento Cheese & Tomato Sandwich",
+          "serving": null,
+          "calories": 480,
+          "desc": "Multigrain bread, sliced tomato, cheddar red pepper spread.",
+          "tags": [
+            "plant_forward",
+            "whole_grains"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "American Cheese",
+          "serving": "1 slice",
+          "calories": 50,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Cheddar Cheese",
+          "serving": "1 slice",
+          "calories": 60,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Ham",
+          "serving": "1 slice",
+          "calories": 30,
+          "desc": null,
+          "tags": [],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Provolone Cheese",
+          "serving": "1 slice",
+          "calories": 50,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Salami",
+          "serving": "1 slice",
+          "calories": 30,
+          "desc": null,
+          "tags": [],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Sliced Roast Beef",
+          "serving": "1 slice",
+          "calories": 40,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Swiss Cheese",
+          "serving": "1 slice",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Turkey Breast",
+          "serving": "1 slice",
+          "calories": 25,
+          "desc": null,
+          "tags": [],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Chicken Salad",
+          "serving": null,
+          "calories": 280,
+          "desc": "Diced chicken & celery in creamy Dijon mayo.",
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Roast Beef & Blue Cheese Wrap",
+          "serving": null,
+          "calories": 320,
+          "desc": "Roast beef, basil, tomato, romaine, cabbage, spicy blue cheese in whole‑grain tortilla.",
+          "tags": [],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Whole Grain Dinner Roll",
+          "serving": null,
+          "calories": 80,
+          "desc": null,
+          "tags": [],
+          "rating": 2.0,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "toppings",
+      "name": "Toppings Bar",
+      "items": [
+        {
+          "name": "Burger Sauce",
+          "serving": "2 tbsp",
+          "calories": 150,
+          "desc": null,
+          "tags": [],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Dill Pickle Slices",
+          "serving": "2 slices",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Grape Jelly",
+          "serving": "2 tbsp",
+          "calories": 100,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Strawberry Cream Cheese",
+          "serving": "2 tbsp",
+          "calories": 90,
+          "desc": null,
+          "tags": [],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Strawberry Preserves",
+          "serving": "2 tbsp",
+          "calories": 100,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "SunButter®",
+          "serving": "1 tbsp",
+          "calories": 100,
+          "desc": null,
+          "tags": [],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Vegan Butter",
+          "serving": null,
+          "calories": null,
+          "desc": null,
+          "tags": [
+            "vegan"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Whipped Cream Cheese",
+          "serving": "2 tbsp",
+          "calories": 90,
+          "desc": null,
+          "tags": [],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Green Leaf Lettuce",
+          "serving": "1 piece",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Jalapeño Peppers",
+          "serving": "1/4 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Sliced Red Onions",
+          "serving": "1 slice",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Sliced Tomatoes",
+          "serving": "1 slice",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "American Cheese",
+          "serving": "1 slice",
+          "calories": 50,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Cheddar Cheese",
+          "serving": "1 slice",
+          "calories": 60,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Pepper Jack Cheese",
+          "serving": "1 slice",
+          "calories": 50,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Provolone Cheese",
+          "serving": "1 slice",
+          "calories": 50,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Swiss Cheese",
+          "serving": "1 slice",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Chipotle Mayonnaise",
+          "serving": null,
+          "calories": 210,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "trattoria",
+      "name": "Trattoria",
+      "items": [
+        {
+          "name": "Chopped Fresh Spinach",
+          "serving": "1/4 cup",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Diced Mixed Bell Peppers",
+          "serving": "1/4 cup",
+          "calories": 10,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Diced Onions",
+          "serving": "1/4 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Diced Tomatoes",
+          "serving": "1/4 cup",
+          "calories": 10,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Sliced Mushrooms",
+          "serving": "1/4 cup",
+          "calories": 0,
+          "desc": "Sliced fresh mushrooms.",
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Crumbled Vegan Chorizo",
+          "serving": "1/4 cup",
+          "calories": 110,
+          "desc": null,
+          "tags": [
+            "vegan"
+          ],
+          "rating": 4.0,
+          "img": ""
+        },
+        {
+          "name": "Diced Ham",
+          "serving": "1/4 cup",
+          "calories": 50,
+          "desc": null,
+          "tags": [],
+          "rating": 5.0,
+          "img": ""
+        },
+        {
+          "name": "Egg Whites",
+          "serving": "1/2 cup",
+          "calories": 45,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Eggs",
+          "serving": "1/2 cup",
+          "calories": 130,
+          "desc": null,
+          "tags": [
+            "vegetarian",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Just® Egg",
+          "serving": "1 ozw",
+          "calories": 40,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Shredded Cheddar Cheese",
+          "serving": "2 tbsp",
+          "calories": 60,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Shredded Vegan Cheddar",
+          "serving": "1 tbsp",
+          "calories": 45,
+          "desc": null,
+          "tags": [],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Turkey Sausage Patty",
+          "serving": "1 ozw",
+          "calories": 70,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "truebal",
+      "name": "True Balance",
+      "items": [
+        {
+          "name": "Pineapple Jalapeño Chicken",
+          "serving": null,
+          "calories": 600,
+          "desc": "Baked chicken topped with sweet & spicy pineapple‑jalapeño sauce.",
+          "tags": [
+            "gluten_free",
+            "eat_well"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Rice Noodles",
+          "serving": "1/2 cup",
+          "calories": 210,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Chocolate Chip Brownie",
+          "serving": null,
+          "calories": 330,
+          "desc": null,
+          "tags": [],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Char‑Grilled Hamburger",
+          "serving": null,
+          "calories": 430,
+          "desc": "Grilled beef burger on a bun.",
+          "tags": [],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Sweet & Spicy Plum Sauce",
+          "serving": "2 tbsp",
+          "calories": 90,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Sweet Chili Sauce",
+          "serving": "1/4 cup",
+          "calories": 90,
+          "desc": null,
+          "tags": [],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Bok Choy",
+          "serving": "1 ozw",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 2.0,
+          "img": ""
+        },
+        {
+          "name": "Broccoli Florets",
+          "serving": "1/2 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Diced Onions",
+          "serving": "1/4 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.0,
+          "img": ""
+        },
+        {
+          "name": "Diced Red Bell Peppers",
+          "serving": "1/4 cup",
+          "calories": 10,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "Shredded Carrots",
+          "serving": "1/4 cup",
+          "calories": 15,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Sliced Mushrooms",
+          "serving": "1/4 cup",
+          "calories": 0,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Beyond Sausage®",
+          "serving": null,
+          "calories": 230,
+          "desc": "Vegetarian sausage.",
+          "tags": [
+            "vegan",
+            "plant_forward",
+            "gluten_free"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Diced Chicken",
+          "serving": "1 ozw",
+          "calories": 45,
+          "desc": null,
+          "tags": [
+            "gluten_free"
+          ],
+          "rating": 3.5,
+          "img": ""
+        },
+        {
+          "name": "White Rice",
+          "serving": "1/2 cup",
+          "calories": 120,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 1.5,
+          "img": ""
+        },
+        {
+          "name": "Yellow Rice",
+          "serving": null,
+          "calories": 140,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free",
+            "eat_well"
+          ],
+          "rating": 4.5,
+          "img": ""
+        },
+        {
+          "name": "Corn on the Cob",
+          "serving": null,
+          "calories": 45,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Grilled Eggplant",
+          "serving": null,
+          "calories": 90,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free",
+            "eat_well"
+          ],
+          "rating": 3.0,
+          "img": ""
+        }
+      ]
+    },
+    {
+      "id": "under",
+      "name": "Under The Hood",
+      "items": [
+        {
+          "name": "Char‑Grilled Turkey Burger",
+          "serving": null,
+          "calories": 330,
+          "desc": null,
+          "tags": [
+            "coolfood_low_carbon",
+            "eat_well"
+          ],
+          "rating": 2.5,
+          "img": ""
+        },
+        {
+          "name": "Hamburger",
+          "serving": null,
+          "calories": 350,
+          "desc": null,
+          "tags": [],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Crispy Chicken Nuggets",
+          "serving": null,
+          "calories": 230,
+          "desc": null,
+          "tags": [],
+          "rating": 3.0,
+          "img": ""
+        },
+        {
+          "name": "Grilled Chicken Breast",
+          "serving": null,
+          "calories": 220,
+          "desc": null,
+          "tags": [],
+          "rating": 0.5,
+          "img": ""
+        },
+        {
+          "name": "Beyond Burger® Patty",
+          "serving": "1 each",
+          "calories": 230,
+          "desc": null,
+          "tags": [
+            "vegan",
+            "gluten_free"
+          ],
+          "rating": 5.0,
+          "img": ""
+        },
+        {
+          "name": "Crispy Tater Tots",
+          "serving": null,
+          "calories": 90,
+          "desc": null,
+          "tags": [],
+          "rating": 1.0,
+          "img": ""
+        }
+      ]
+    }
+  ]
+}

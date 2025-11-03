@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sadler Dining Hall – Smart Bytes</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <header>
+    <a class="back" href="sadler.html">&#8592;</a>
+    <h1>Sadler Dining Hall</h1>
+  </header>
+
+  <nav>
+    <a href="settings.html">Settings</a>
+    <a href="#" id="filter-link">Filter</a>
+    <a href="sadler.html" class="active">Sadler</a>
+    <a href="commons.html">Commons</a>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar" id="sidebar"></div>
+    <div class="menu-content" id="menuContent"></div>
+  </div>
+
+    <!-- Modal (shared template) -->
+  <div id="itemModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-btn" aria-label="Close">×</button>
+      <div class="img-frame">
+        <img id="modal-img" alt="">
+      </div>
+      <h2 id="modal-title"></h2>
+      <p id="modal-calories"></p>
+      <p id="modal-desc"></p>
+      <div id="modal-badges" class="badges"></div>
+    </div>
+  </div>
+
+  <script src="scripts/menu-modal.js"></script>
+  <script src="scripts/menu-loader.js"></script>
+  <script src="scripts/menu-scroll.js"></script>
+</body>
+</html>
