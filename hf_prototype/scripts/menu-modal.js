@@ -75,6 +75,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setModalImage(img, name); // <- will use images/placeholder-food.jpg if missing/broken
 
+    // Ensure there is exactly one primary add button in the modal
+    let primary = modal.querySelector('.eat-btn--primary');
+    if (!primary) {
+      primary = document.createElement('button');
+      primary.type = 'button';
+      primary.className = 'eat-btn eat-btn--primary';
+      primary.textContent = 'Add to My Meals';
+      // Do not let modal background handlers swallow the click
+      primary.addEventListener('click', (e) => e.stopPropagation());
+      modal.querySelector('.modal-content').appendChild(primary);
+    }
+
+    // Carry data for cart.js (modal-case handler)
+    primary.dataset.title = name || '';
+    primary.dataset.calories = String(calories || 0);
+    primary.dataset.meal = document.querySelector('.meal-btn[aria-pressed="true"]')?.dataset.meal || 'lunch';
+    primary.dataset.date = document.getElementById('meal-date-input')?.value || new Date().toISOString().slice(0,10);
+
+    const addBtn = document.getElementById('modalAddBtn');
+    if (addBtn) {
+      const meal = document.querySelector('.meal-btn[aria-pressed="true"]')?.dataset.meal || 'lunch';
+      const date = document.getElementById('meal-date-input')?.value ||
+                  new Date().toISOString().slice(0,10);
+
+      addBtn.dataset.title = name || 'Unknown Item';
+      addBtn.dataset.calories = String(calories || 0);
+      addBtn.dataset.meal = meal;
+      addBtn.dataset.date = date;
+}
+
+
     modal.classList.remove("hidden");
   });
 

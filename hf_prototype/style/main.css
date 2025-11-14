@@ -19,6 +19,15 @@
   box-sizing: border-box;
 }
 
+html, body { height: 100%; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;      /* lock viewport height */
+  overflow: hidden;   /* only inner content scrolls */
+}
+
 body {
   margin: 0;
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -84,9 +93,11 @@ nav a.active {
 .container {
   display: flex;
   background: var(--card);
-  height: calc(100vh - 120px);
-  overflow: hidden;
+  flex: 1 1 auto;     /* fill remaining height under header+navs */
+  min-height: 0;      /* REQUIRED so children can actually scroll */
+  overflow: hidden;   /* no double scrollbars */
 }
+
 
 /* SIDEBAR */
 .sidebar {
@@ -120,6 +131,14 @@ nav a.active {
   color: var(--accent);
   font-weight: 600;
 }
+
+.sidebar,
+.menu-content {
+  overflow-y: auto;   /* you already have this */
+  height: auto;       /* ensure flex governs height */
+  min-height: 0;      /* REQUIRED for proper inner scrolling */
+}
+
 
 /* MENU CONTENT */
 .menu-content {
@@ -364,3 +383,467 @@ nav a.active {
 }
 #itemModal .close-btn:hover{background:rgba(0,0,0,.7);}
 #itemModal .close-btn:focus{outline:2px solid #fff; outline-offset:2px;}
+
+/* ===== DR5: Meal/Date top nav (inline date picker, no modal) ===== */
+.meal-nav {
+  z-index: 900;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+}
+
+
+/* Shared button/date input styling */
+.meal-btn,
+.meal-date {
+  border: none;
+  background: transparent;
+  color: #444;
+  font: inherit;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.meal-btn:hover,
+.meal-date:hover {
+  color: var(--accent);
+}
+
+.meal-btn.active,
+.meal-btn[aria-pressed="true"] {
+  background: #e8f3ff;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Style the inline date picker to match the nav look */
+.meal-date {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  text-align: center;
+}
+
+.meal-date::-webkit-calendar-picker-indicator {
+  filter: invert(40%);
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+/* === Eat/Add button === */
+.eat-btn {
+  display: inline-block;
+  border: 1px solid var(--border);
+  background: #f8f8f8;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+  transition: all .2s ease;
+  margin-top: 8px;
+}
+.eat-btn:hover { background: #eef2ff; border-color: #cfe0ff; }
+
+/* === My Meals / Stats === */
+.stats-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px;
+}
+.stat-card h4 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+}
+.stat-row { display: flex; justify-content: space-between; margin: 4px 0; }
+.stat-row .val { font-weight: 600; }
+
+.meal-list { margin-top: 16px; }
+.meal-entry {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+.meal-entry .line { display: flex; justify-content: space-between; gap: 10px; }
+.meal-entry .meta { color: var(--muted); font-size: 12px; }
+
+.entry-actions {
+  display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap;
+}
+.entry-actions .del-btn {
+  border: 1px solid #e11d48;
+  color: #e11d48;
+  background: #fff1f2;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.entry-actions .del-btn:hover { background: #ffe4e6; }
+
+/* === Item actions: review + add === */
+.item-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.eat-btn {
+  display: inline-block;
+  border: 1px solid var(--border);
+  background: #f8f8f8;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.eat-btn:hover { background: #eef2ff; border-color: #cfe0ff; }
+
+/* Inline review stars (compact) */
+.review-wrap { display:flex; align-items:center; gap:6px; }
+.review-label { font-size:12px; color:var(--muted); }
+
+.review-stars { display:inline-flex; gap:2px; user-select:none; }
+.review-stars .star { width:16px; height:16px; }
+.review-stars .star-svg { width:16px; height:16px; }
+
+/* === Add-to-cart buttons === */
+.eat-btn {
+  border: 1px solid var(--border);
+  background: #f8f8f8;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+.eat-btn:hover { background: #eef2ff; border-color: #cfe0ff; }
+
+/* Small inline button on list cards */
+.eat-btn--small {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Primary button inside modal */
+.eat-btn--primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 14px;
+  font-weight: 600;
+  background: #e8f3ff;
+  border: 1px solid #cfe0ff;
+  color: var(--accent);
+  margin-top: 10px;
+}
+.eat-btn--primary:hover {
+  background: #dcecff;
+  border-color: #b8d5ff;
+}
+
+
+/* Quick toast for add feedback */
+.toast-fixed {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(17, 24, 39, 0.92);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all .25s ease;
+  pointer-events: none;
+  z-index: 2000;
+}
+.toast-fixed.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Subtle success pulse on the modal button */
+.eat-btn--primary.added {
+  animation: pulseAdded 0.8s ease;
+}
+@keyframes pulseAdded {
+  0%   { transform: scale(1); }
+  25%  { transform: scale(1.03); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+  100% { transform: scale(1); box-shadow: none; }
+}
+
+/* Quick toast */
+.toast-fixed {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(17,24,39,.92);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all .25s ease;
+  pointer-events: none;
+  z-index: 2000;
+}
+.toast-fixed.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Small visual while adding */
+.eat-btn--primary:disabled { opacity: .75; }
+
+/* Centered popup for date restriction */
+.sb-alert-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+}
+.sb-alert-backdrop.show { display: flex; }
+
+.sb-alert {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  width: min(360px, 92vw);
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: left;
+}
+.sb-alert-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #111827;
+}
+.sb-alert-msg {
+  font-size: 14px;
+  color: #374151;
+  white-space: pre-line; /* keep newline between sentences */
+  margin-bottom: 12px;
+}
+.sb-alert-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #cfe0ff;
+  background: #e8f3ff;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* existing toast styles (if not already present) */
+.toast-fixed {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%) translateY(20px);
+  background: rgba(17,24,39,.92);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all .25s ease;
+  pointer-events: none;
+  z-index: 2000;
+}
+.toast-fixed.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* === Filter modal (Sadler / Commons) === */
+
+.filter-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1600;
+}
+
+.filter-backdrop.open {
+  display: flex;
+}
+
+.filter-modal {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  width: min(380px, 92vw);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.18);
+}
+
+.filter-modal h2 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.filter-section {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.filter-section h3 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+}
+
+.filter-hint {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.filter-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.filter-row label {
+  flex: 1;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.filter-row input {
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font: inherit;
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.filter-chip input {
+  accent-color: var(--accent);
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.filter-actions button {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.filter-actions .filter-apply {
+  border-color: var(--accent);
+  background: #e8f3ff;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* === Card layout fix: keep everything inside the content box === */
+
+.item {
+  display: block;           /* no !important so JS can use display:none */
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+/* Layout:
+   line 1: name
+   line 2: stars + calories
+*/
+.item-line {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+/* Row with stars + calories */
+.item-line > span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Name fully left-justified and allowed to wrap */
+.item .name {
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Stars stay compact and never stretch the card wider */
+.item .stars {
+  display: inline-flex;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+/* Calories text on same row, left-aligned, small */
+.item .cal {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Ensure the content column never scrolls horizontally */
+.menu-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+}

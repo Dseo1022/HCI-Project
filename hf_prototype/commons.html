@@ -17,6 +17,15 @@
     <a href="#" id="filter-link">Filter</a>
     <a href="sadler.html">Sadler</a>
     <a href="commons.html" class="active">Commons</a>
+    <a href="my-meals.html">My Meals</a>
+  </nav>
+
+  <!-- DR5 meal/date nav (inline date picker, no modal) -->
+  <nav class="meal-nav" aria-label="Meal and date navigation">
+    <input type="date" id="meal-date-input" class="meal-date" aria-label="Select date" />
+    <button type="button" class="meal-btn" data-meal="breakfast" aria-pressed="false">Breakfast</button>
+    <button type="button" class="meal-btn" data-meal="lunch" aria-pressed="false">Lunch</button>
+    <button type="button" class="meal-btn" data-meal="dinner" aria-pressed="false">Dinner</button>
   </nav>
 
   <div class="container">
@@ -35,11 +44,16 @@
       <p id="modal-calories"></p>
       <p id="modal-desc"></p>
       <div id="modal-badges" class="badges"></div>
+      <button id="modalAddBtn" type="button" class="eat-btn eat-btn--primary">
+      Add to My Meals
+      </button>
     </div>
   </div>
 
   <script src="scripts/menu-modal.js"></script>
   <script src="scripts/menu-loader.js"></script>
   <script src="scripts/menu-scroll.js"></script>
+  <script src="scripts/meal-nav.js" defer></script>
+  <script src="scripts/cart.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Meals – Smart Bytes</title>
+  <link rel="stylesheet" href="style/main.css"/>
+</head>
+<body>
+  <header>
+    <a class="back" href="sadler.html">&#8592;</a>
+    <h1>My Meals</h1>
+  </header>
+
+  <nav>
+    <a href="settings.html">Settings</a>
+    <a href="sadler.html">Sadler</a>
+    <a href="commons.html">Commons</a>
+    <a href="my-meals.html" class="active">My Meals</a>
+  </nav>
+
+  <div class="container">
+    <div class="menu-content" style="width:100%">
+      <section class="section">
+        <h3>Today’s Totals</h3>
+        <div class="stats-wrap">
+          <div class="stat-card">
+            <h4>Calories</h4>
+            <div class="stat-row"><span>Total</span><span class="val" id="stat-cal">0</span></div>
+          </div>
+          <div class="stat-card">
+            <h4>Macros</h4>
+            <div class="stat-row"><span>Protein (g)</span><span class="val" id="stat-pro">0</span></div>
+            <div class="stat-row"><span>Carbs (g)</span><span class="val" id="stat-carbs">0</span></div>
+            <div class="stat-row"><span>Fat (g)</span><span class="val" id="stat-fat">0</span></div>
+          </div>
+        </div>
+        <div class="meal-list" id="meal-list"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="scripts/meal-nav.js" defer></script>
+  <script src="scripts/cart.js" defer></script>
+</body>
+</html>
